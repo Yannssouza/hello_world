@@ -8,11 +8,11 @@ import java.util.Arrays;
 import java.util.List;
 
 @RestController
-@RequestMapping()
+@RequestMapping
 public class HelloWorldController {
 
     @GetMapping("/helloWorld")
-    public String helloWorld() {
+    public String getHelloWorld() {
         return "Hello World!";
     }
 
@@ -29,7 +29,7 @@ public class HelloWorldController {
     }
 
     @GetMapping("/objetivos")
-    public List<String> getLearningObjectives() {
+    public List<String> getObjetivosEstudos() {
         return Arrays.asList(
                 "Aprender Spring Boot",
                 "Entender endpoints em Spring",
